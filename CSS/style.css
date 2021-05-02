@@ -1,0 +1,42 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-family: 'Ubuntu', sans-serif;
+}
+
+#header-mobile {
+  background-color: #fdb827;
+  margin: 0  auto;
+}
+
+#header-mobile .list-items h5 {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+#header-mobile .list-items ul li a {
+  display: block;
+  font-weight: 500;
+  color: #000;
+}
+
+#main-doc code {
+  color: #fff;
+}
+
+#main-doc #barra-desktop a {
+  text-align: start;
+  padding: 25px 0;
+  color: #000;
+  font-weight: 700;
+}
+
+footer .footer-title i {
+  color: #fff;
+}
+/*# sourceMappingURL=style.css.map */

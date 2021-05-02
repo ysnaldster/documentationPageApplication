@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/CSS/style.css">
+    <title>Documentation_page</title>
+</head>
+
+<body>
+    <!-- Barra Mobile -->
+    <header id="header-mobile" class="container-fluid d-flex justify-content-center align-items-center">
+        <nav class="card d-md-none text-center " style="width: 100%; margin: 10px auto; background-color: #fff3b2;"
+            id="navbar">
+            <header class="card-header" style="font-size: 20px; font-weight: bold;"><i
+                    class="fab fa-js pe-2"></i>JavaScript Importante</header>
+            <div class="card-body list-items ">
+                <h5 class="card-title">Temas Considerados</h5>
+                <ul style="text-align: start;">
+                    <li>
+                        <a href="#Definicion_JavaScript" class="nav-link">Definicion JavaScript</a>
+                    </li>
+                    <li>
+                        <a href="#AJAX_y_Fetch" class="nav-link">AJAX y Fetch</a>
+                    </li>
+                    <li>
+                        <a href="#Formato_JSON_y_las_API's" class="nav-link">Formato JSON y las API's</a>
+                    </li>
+                    <li>
+                        <a href="#LocalStorage" class="nav-link">LocalStorage</a>
+                    </li>
+                    <li>
+                        <a href="#Asincronia_en_JavaScript" class="nav-link">Asincronia en JavaScript</a>
+                    </li>
+                    <li>
+                        <a href="#Referencias" class="nav-link">Referencias</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main class="container-fluid d-flex" id="main-doc" style="padding: 10px; background-color: #fdb827;">
+        <div class="order-2">
+            <div class="row mb-2">
+                <section id="Definicion_JavaScript">
+                    <div class="card" style="width: 100%;">
+                        <header class="card-title"
+                            style="font-weight: bold; font-size: 18px; text-align: center; margin-top: 10px;">Definicion
+                            JavaScript</header>
+                        <div class="card-body">
+                            <p class="card-text">
+                            <p>JavaScript, a diferencia de HTML y CSS, sí que es un lenguaje de programación. Este
+                                lenguaje nos
+                                permite dar instrucciones al ordenador, en este caso al navegador web, para explicarle
+                                cómo debe
+                                mostrar nuestra página y que debe hacer en qué situación </p>
+                            <ul>
+                                <li>
+                                    JavaScript en su día fue creado para realizar validaciones sobre datos en un
+                                    formulario,
+                                    pero
+                                    ese tiempo quedó ya muy atrás. Hoy en día es uno de los lenguajes más populares y
+                                    gran parte
+                                    de
+                                    ese mérito se debe a que es el lenguaje de la web, es decir, es el único lenguaje de
+                                    programación que entienden los navegadores (debemos recordar que HTML y CSS no son
+                                    lenguajes
+                                    de
+                                    programación)
+                                </li>
+                                <li>
+                                    Desde su inicio se ha expandido y sus fronteras han ido más allá de la web hasta
+                                    llegar al
+                                    punto
+                                    en el que se utiliza JavaScript para programar aplicaciones para ordenador,
+                                    servidores,
+                                    robots e
+                                    incluso proyectos espaciales llevados a cabo por la NASA.
+                                </li>
+                            </ul>
+                            <div style="background-color: black; color: #fff;">
+                                <code>
+                                      //Ejemplo de linea de codigo en JavaScript
+                                      var hello_world = 'Hola mundo mi primera linea de codigo en JS' <br>
+                                      document.write(hello_world);
+                                      <br>
+                                  </code>
+                                <code>
+                                  //Ejemplo en otros lenguajes <br>
+                                  #include main() { for(;;) { printf ("Hello World!\n"); } } 
+                                  </code>
+                            </div>
+                            </p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <!-- AJAX Y Fetch -->
+            <div class="row mb-2">
+                <section id="AJAX_y_Fetch">
+                    <div class="card" style="width: 100%;">
+                        <header class="card-title"
+                            style="font-weight: bold; font-size: 18px; text-align: center; margin-top: 10px;">AJAX y
+                            Fetch</header>
+                        <div class="card-body">
+                            <p>
+                                AJAX es el puente entre el cliente (navegador) y el servidor, entre el frontend y el
+                                backend de
+                                nuestra aplicación. Las peticiones AJAX nos permiten acceder y manipular datos en el
+                                servidor,
+                                pero
+                                iniciando el proceso en el frontend.
+                            </p>
+                            <p>
+                                AJAX viene de Asynchronous JavaScript And XML porque cuando se creó servía para hacer
+                                peticiones
+                                al
+                                servidor desde JS y normalmente el formato de datos que nos devolvía era XML (una forma
+                                de
+                                escribir
+                                los datos para poder enviarlos). Pero actualmente no es así y AJAX ahora utiliza otros
+                                tipos de
+                                datos, desde texto hasta JSON que veremos más adelante. Pero el hecho de que sea
+                                asíncrono sí es
+                                importante. Aunque sea una palabra que asusta, asíncrono simplemente significa trabajar
+                                con
+                                eventos
+                                (como hemos visto en las sesiones anteriores), es decir, que cuando sucede un evento se
+                                ejecuta
+                                una
+                                función. Se llama asíncrono porque nosotros no ejecutamos el código de forma síncrona
+                                (una
+                                instrucción detrás de otra) sino que el código se ejecuta cuando sucede un evento.
+                            </p>
+                            <p>
+                                ¿En qué casos se utiliza?
+                            <ul>
+                                <li>
+                                    Cuando realizamos una búsqueda de pisos en Airbnb, hacemos una petición AJAX al
+                                    servidor, y
+                                    cuando nos devuelve los datos de los pisos lo pintamos en el HTML.
+                                </li>
+                                <li>
+                                    Cuando en nuestra app de tareas marcamos una tarea como terminada, se envía una
+                                    petición al
+                                    servidor para que almacene en base de datos que esa tarea ha sido completada; así,
+                                    al abrir
+                                    la
+                                    app en nuestro móvil aparecerá como completada.
+                                </li>
+                                <li>
+                                    En Gmail, el listado de nuestros correos se obtiene de una petición al servidor;
+                                    cuando
+                                    marcamos
+                                    un correo como leído se envía la información al servidor; o cuando enviamos un
+                                    correo, éste
+                                    se
+                                    envía a un servidor para que lo lleve a su destinatario.
+                                </li>
+                            </ul>
+                            </p>
+                            <p>
+                            <br>
+                            Fetch, a día de hoy la manera estándar de acceder a datos en el servidor desde nuestro frontend es
+                            fetch,
+                            una nueva API del navegador que funciona gracias a una forma moderna de manejar la
+                            asincronía de
+                            JavaScript llamada Promesas. Hasta ahora el estándar había sido usar el objeto
+                            XMLHttpRequest
+                            que
+                            trabaja con callbacks y que veremos al final de esta sesión como bonus.
+                            </p>
+                            <div style="background-color: black; color: #fff;">
+                                <code>
+                                    fetch('url de la API')
+                                      <br>
+                                      .then(function(response) {    <br>
+                                        return response.json();  <br>
+                                    } <br>
+                                ).then(function(data) {     <br>
+                                        document.body.innerHTML = data.result;  <br>
+                                }
+                                );
+                                  </code>
+                            </div>
+                            </p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <!-- Formato JSON y las API'S -->
+            <div class="row mb-2">
+                <section id="Formato_JSON_y_las_API's">
+                    <div class="card" style="width: 100%;">
+                        <header class="card-title"
+                            style="font-weight: bold; font-size: 18px; text-align: center; margin-top: 10px;">Formato JSON y las API's</header>
+                        <div class="card-body">
+                            <p>
+                                ¿Que es el Formato JSON? <br>
+                                Es formato muy habitual para el intercambio de información en la web (pronunciado en inglés como
+                                Jason). Son las siglas de JavaScript Object Notation, es decir, que es muy similar a como se
+                                definen
+                                los objetos literales en JavaScript, sin embargo, hay diferencias:
+                            </p>
+                            <ul>
+                                <li>Las claves siempre van entre comillas {"userName": "Paco"}</li>
+                                <li>Los valores permitidos son: string, number, boolean, array y json object. Esto quiere decir
+                                    que
+                                    un JSON no podemos almacenar funciones por lo tanto nunca tendrá métodos.</li>
+                            </ul>
+                            <p>
+                                ¿Que es una API? <br>
+                                API viene de Application Programming Interface, es decir, es una interfaz que está pensada para
+                                ser
+                                accedida desde una aplicación de código. Dicho de otra forma, el servidor define una forma de
+                                pedirle datos, pensada para que sea una aplicación (un programa) quien los pida y él sepa
+                                enviárselos. Hay otras interfaces, como una página web, que están pensadas para ser usadas por
+                                personas
+                            </p>
+                            </p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <!-- Local Storage -->
+            <div class="row mb-2">
+                <section  id="LocalStorage">
+                    <div class="card" style="width: 100%;">
+                        <header class="card-title"
+                            style="font-weight: bold; font-size: 18px; text-align: center; margin-top: 10px;">LocalStorage</header>
+                        <div class="card-body">
+                            <p>
+                                ¿Que es el Formato JSON? <br>
+                                Es formato muy habitual para el intercambio de información en la web (pronunciado en inglés como
+                                Jason). Son las siglas de JavaScript Object Notation, es decir, que es muy similar a como se
+                                definen
+                                los objetos literales en JavaScript, sin embargo, hay diferencias:
+                            </p>
+                            <ul>
+                                <li>Las claves siempre van entre comillas {"userName": "Paco"}</li>
+                                <li>Los valores permitidos son: string, number, boolean, array y json object. Esto quiere decir
+                                    que
+                                    un JSON no podemos almacenar funciones por lo tanto nunca tendrá métodos.</li>
+                            </ul>
+                            <p>
+                                ¿Que es una API? <br>
+                                API viene de Application Programming Interface, es decir, es una interfaz que está pensada para
+                                ser
+                                accedida desde una aplicación de código. Dicho de otra forma, el servidor define una forma de
+                                pedirle datos, pensada para que sea una aplicación (un programa) quien los pida y él sepa
+                                enviárselos. Hay otras interfaces, como una página web, que están pensadas para ser usadas por
+                                personas
+                            </p>
+                            <div style="background-color: black; color: #fff;">
+                                <code>
+                                    //Ejemplo <br>
+                                    localStorage.setItem('name', 'Ana'); <br>
+                                    // Para recuperar los datos es tan sencillo como usar getItem y pasar el nombre que le dimos a los datos. <br>
+                                    const name = localStorage.getItem('name'); <br>
+                                    console.log(name); //Ana <br>
+                                    //Si es deseado borrar los datos, hay que utilizar el metodo removeItem, asi: <br>
+                                    localStorage.removeItem('name'); <br>
+                                </code>
+                                <code>
+                                    //Es posible tambien guardar arreglos: <br>
+                                    const  tasks = [ <br>
+                                     {name: 'Recoger setas en el campo', completed: true}, <br>
+                                     {name: 'Comprar pilas', completed: true}, <br>
+                                     {name: 'Poner una lavadora de blancos', completed: true}, <br>
+                                     {name: 'Aprender cómo funcionan los objetos de JavaScript', completed: false} <br>
+                                     ];
+                                     <br>
+                                     localStorage.setItem('taks', JSON.stringify(tasks)); <br>
+                                     <br>
+                                     const  savedTasks = JSON.parse(localStorage.getItem('taks')); <br>
+                                     console.log(savedTasks.length); //4
+                                </code>
+                            </div>
+                            </p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <!-- Asincronia en JS -->
+            <div class="row mb-2">
+                <section  id="Asincronia_en_JavaScript">
+                    <div class="card" style="width: 100%;">
+                        <header class="card-title"
+                            style="font-weight: bold; font-size: 18px; text-align: center; margin-top: 10px;">Asincronia en JavaScript</header>
+                        <div class="card-body">
+                            <p>
+                                ¿Que es la asincronía? <br>
+                                Imaginemos que tenemos un conjunto de tareas a realizar. En los lenguajes tradicionales, ese
+                                conjunto de
+                                instrucciones se realizaba una tras otra, es decir, imaginemos que tenemos los siguientes pasos:
+                            </p>
+                            <ul>
+                                <li>Mostrar un mensaje en la pantalla</li>
+                                <li>Realizar una petición al servidor</li>
+                                <li>Mostrar otro mensaje</li>
+                                <li>Con la respuesta del servidor, mostrar "Respuesta: ..."</li>
+                            </ul>
+                            <p>
+                                JavaScript permite realizar tareas de forma asíncrona y concurrente, esto quiere decir que pueden
+                                realizarse tareas que no vayan en cadena y ejecutarse ambas a la vez y trabajar de forma
+                                independiente.
+                            </p>
+                            <p>
+                                ¿Por qué es importante entender la asincronía? <br>
+                                Entender la asincronía en JavaScript será fundamental para saber en qué orden se ejecutará nuestro
+                                código y por tanto, poder lidiar con él mejor sin que tengamos problemas de que algún paso no se
+                                ejecute
+                                cuando lo necesitamos.
+                                Además, la mayoría de las formas de hacer nuestra web interactiva (eventos) dependen de esa
+                                asincronía
+                                por lo que supone un conocimiento muy importante si queremos hacer que nuestra web sea interactiva y
+                                funcione correctamente.
+                            </p>
+                            </p>
+                            <div style="background-color: black; color: #fff;">
+                                <code>
+                                    //Ejemplo contador de incremento por segundo<br>
+                                    Se crea un elemento p en HTML con clase "time"
+                                    <br>
+                                    let counter = 0;
+                                    const incrementAndShowCounter = () => {
+                                    counter++;
+                                    const time = document.querySelector('.time');
+                                    time.innerHTML = counter;
+                                    }
+                                    setInterval(incrementAndShowCounter, 1000);
+                                </code>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <div class="row mb-2">
+                <section  id="Referencias">
+                    <div class="card" style="width: 100%;">
+                        <header class="card-title"
+                            style="font-weight: bold; font-size: 18px; text-align: center; margin-top: 10px;">Referencias</header>
+                        <div class="card-body d-flex justify-content-center align-items-center">
+                            <a href="https://john-florez.gitbook.io/fundamentosjs-virtual/" target="_blank" style="color: black; text-decoration: none;">JavaScriptGeekBook</a>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <!-- Barra Desktop -->
+        
+        <nav id="navbar" class="order-1 d-none d-md-block" style="padding: 0 20px; position: fixed; z-index: 1;">
+            <ul class="list-group" id="barra-desktop">
+                <li class="list-group-item" style="font-weight: bold; font-size: 20px;" >
+                    <header id="desplegable-temas"> <i
+                        class="fab fa-js pe-2" style="display: flex; justify-content: center; align-items: center; padding: 10px 0;" ></i>JavaScript Importante</header>
+                </li>
+                <div class="d-none menu_oculto" >
+                    <li class="list-group-item">
+                        <a href="#Definicion_JavaScript" class="nav-link">Definicion JavaScript</a>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="#AJAX_y_Fetch" class="nav-link">AJAX y Fetch</a>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="#Formato_JSON_y_las_API's" class="nav-link">Formato JSON y las API's</a>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="#LocalStorage" class="nav-link">LocalStorage</a>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="#Asincronia_en_JavaScript" class="nav-link">Asincronia en JavaScript</a>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="#Referencias" class="nav-link">Referencias</a>
+                    </li>
+                </div>
+              </ul>
+        </nav>
+    </main>
+    <footer>
+        <div class="container-fluid" style="background-color: #000; color: #fff; padding: 10px; font-weight: bold;">
+            <div class="row d-flex justify-content-center align-items-center" >
+                <div class="footer-title col-8 text-center" >
+                    Desarrollado por Ysnaldo Jose Lopez Hernandez |
+                    <a href="https://github.com/YsnaldoXVen" target="_blank">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.instagram.com/lopez_yjose/?hl=es-la" target="_blank">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://twitter.com/lopezh_yjose" target="_blank">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+        crossorigin="anonymous"></script>
+        <script src="index.js"></script>
+    <script src="https://kit.fontawesome.com/c9f838b06e.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
